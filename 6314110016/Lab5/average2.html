@@ -1,0 +1,61 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Fig. 8.9: average2.html -->
+<!-- Sentinel-controlled Repetition -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>IrinAndris 6314110016</title>
+
+    <script type="text/javascript">
+
+        var gradeCounter, // number of grades entered
+            gradeValue, // grade value
+            total, // sum of grades
+            average, // average of all grades
+            grade; // grade typed by user
+
+        // Initialization phase
+        total = 0; // clear total
+        gradeCounter = 0; // prepare to loop
+
+        // Processing phase
+        // prompt for input and read grade from user
+        grade = window.prompt(
+            "Enter Integer Grade, -1 to Quit:", "0");
+
+        // convert grade from a string to an integer
+        gradeValue = parseInt(grade);
+
+        while (gradeValue != -1) {
+            // add gradeValue to total
+            total = total + gradeValue;
+
+            // add 1 to gradeCounter
+            gradeCounter = gradeCounter + 1;
+
+            // prompt for input and read grade from user
+            grade = window.prompt(
+                "Enter Integer Grade, -1 to Quit:", "0");
+
+            // convert grade from a string to an integer
+            gradeValue = parseInt(grade);
+        }
+
+        // Termination phase
+        if (gradeCounter != 0) {
+            average = total / gradeCounter;
+
+            // display average of exam grades document.writeln(
+            "<h1>Class average is " + average + "</h1>";
+        }
+        else
+            document.writeln("<p>No grades were entered</p>");
+        // -->
+        5</script>
+</head>
+
+<body>
+    <p>Click Refresh (or Reload) to run the script again</p>
+    <p><a href="//f:/6314110016/Lab5/index5.html">Back</a></p>
+</body>
+</htm

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irin Andris 6314110016</title>
+</head>
+<body>
+    <p>Access a JSON object using dot notation</p>
+    <p id = "demo"></p>
+
+    <script>
+        var myObj,x;
+        myObj = {"name" : "John","age" : 30, "car" : null};
+        x = myObj.name;
+        document.getElementById("demo").innerHTML = x;
+        x = myObj["age"];
+        document.getElementById("demo").innerHTML += "is" +x+ "Years old";
+    </script>
+    <p><a href="index12.html">Back</a></p>
+</body>
+</html>

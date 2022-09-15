@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Fig. 11.4: InitArray2.html -->
+<!-- Initializing an Array with a Declaration -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Irin Andris 6314110016</title>
+
+    <script type="text/javascript">
+
+        function start() {
+            // Initializer list specifies number of elements and
+            // value for each element.
+            var colors = new Array("cyan", "magenta",
+                "yellow", "black");
+            var integers1 = [2, 4, 6, 8];
+            var integers2 = [2, , , 8];
+
+            outputArray("Array colors contains", colors);
+            outputArray("Array integers1 contains", integers1);
+            outputArray("Array integers2 contains", integers2);
+        }
+
+        // output "header" followed by a two-column table
+        // containing subscripts and elements of "theArray"
+        function outputArray(header, theArray) {
+            document.writeln("<h2>" + header + "</h2>");
+            document.writeln("<table border = \"1\"" +
+                "width = \"100%\">");
+            document.writeln("<thead><th width = \"100\" " +
+                "align = \"left\">Subscript</th>" +
+                "<th align = \"left\">Value</th></thead><tbody>");
+
+            for (var i = 0; i < theArray.length; i++)
+                document.writeln("<tr><td>" + i + "</td><td>" +
+                    theArray[i] + "</td></tr>");
+
+            document.writeln("</tbody></table>");
+        }
+        4// -->
+    </script>
+
+</head>
+<body><p><a href="//C:/6314110016/Lab7/index7.html">Back</a></p></body>
+<body onload="start()"></body>
+</htm

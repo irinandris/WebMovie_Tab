@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irin Andris 6314110016</title>
+    <script type="text/javascript">
+        var letters;
+        var str = new Array();
+        var nosp = 0;
+        var ssp = 0;
+        var charac = new Array();
+        var count = new Array();
+        var strr="";
+
+        function buttonPressed() {
+            letters = searchForm.inputVal.value;
+            for (var i = 0; i < letters.length; i++) {
+                str[i] = letters.charAt(i);
+                if (str[i] != " ") nosp++;
+                if (str[i] == " ") ssp++;
+            }  
+            searchForm.space.value = letters.length
+            searchForm.nospace.value = nosp;
+            searchForm.sumword.value = letters.split(" ").length
+            searchForm.sumspace.value = ssp; 
+            
+
+            for (var i = 0; i < letters.length; i++) {
+                charac[letters.toUpperCase().charCodeAt(i)] = letters.charAt(i);               
+                if(isNaN(count[letters.toUpperCase().charCodeAt(i)])) count[letters.toUpperCase().charCodeAt(i)] = 0;
+                count[letters.toUpperCase().charCodeAt(i)]++;
+            }
+            //document.write("<div style=\"height:300px;width:170px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">");
+            for (var i =  0; i < charac.length; i++) {
+                if(charac[i] != undefined) strr += charac[i]+ ":"+ count[i] +"\n";
+               
+            } //document.write("</div>")  
+            searchForm.countw.value = strr;    
+        }
+    </script>
+</head>
+
+<body>
+    <form name="searchForm" action="">
+        <p>Enter string to count characters
+            <input name="inputVal" type="text" />
+            <input name="search" type="button" value="Search" onclick="buttonPressed()" />
+            <input name="search" type="reset" value="Clear" /><br />
+        </p>
+
+        <p>Total chars with space
+            <input name="space" type="text" size="5" />
+            <br />Total chars without space
+            <input name="nospace" type="text" size="5" />
+            <br />Total words
+            <input name="sumword" type="text" size="5" />
+            <br />Total spaces
+            <input name="sumspace" type="text" size="5" />
+            <br>Each char count <br>
+            <textarea name="countw" cols="20" rows="15"></textarea>
+
+    </form>
+    <p><a href="//C:/6314110016/Lab7/index7.html">Back</a></p>
+</body>
+
+</html>

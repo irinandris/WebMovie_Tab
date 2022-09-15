@@ -1,0 +1,46 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- Fig. 7.16: welcome6.html -->
+<!-- Using Relational Operators -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Irin Andris 6314110016</title>
+
+    <script type="text/javascript">
+        var name, // string entered by the user
+            now = new Date(), // current date and time
+            hour = now.getHours(); // current hour (0-23)
+
+        // read the name from the prompt box as a string
+        name = window.prompt("Please enter your name", "GalAnt");
+
+        // determine whether it is morning
+        if (hour < 12)
+            document.write("<h1>Good Morning, ");
+        // determine whether the time is PM
+        if (hour >= 12) {
+            // convert to a 12 hour clock
+            hour = hour - 12;
+
+            // determine whether it is before 6 PM
+            if (hour < 6)
+                document.write("<h1>Good Afternoon, ");
+
+            // determine whether it is after 6 PM
+            if (hour >= 6)
+                document.write("<h1>Good Evening, ");
+        }
+
+        document.writeln(name +
+            ", welcome to JavaScript programming!</h1>");
+ // -->
+    </script>
+
+</head>
+
+<body>
+    <p>Click Refresh (or Reload) to run this script again.</p>
+    <p><a href="//f:/6314110016/Lab5/index5.html">Back</a></p>
+</body>
+</htm

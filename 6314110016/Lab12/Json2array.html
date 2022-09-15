@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irin Andris 6314110016</title>
+</head>
+<body>
+    <h2>Content as Array</h2>
+    <p>Content written as an JSON array will be converted into a JavaScript array</p>
+    <p id = 'demo'></p>
+    <script>
+        var xnlhttp = new XNLHttpRequest();
+        xnlhttp.onreadystatechange = function(){
+            if (this.readyState == 4 && this.status == 200){
+                var myArr = JSON.parse(this.responseText);
+                document.getElementById('demo').innerHTML = myArr[0];
+            }
+        };
+        xnlhttp.Open("GET","json_dem_array.txt",true);
+        xnlhttp.send();
+    </script>
+    <p>Take a look at <a href="json_demo_array.txt"
+    target="_blank">json_demo_array.txt</a></p>
+    <p><a href="index12.html">Back</a></p>
+</body>
+</html>

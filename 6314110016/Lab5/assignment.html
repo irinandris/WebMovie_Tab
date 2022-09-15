@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irin Andris 6314110016</title>
+
+    <script type="text/javascript">
+      while (true) {
+        var number = window.prompt("Enter integer number from 1 to 40", 12);
+        if (number >= 1 && number <= 40) break;
+        else alert(number + ": Number out of range, try again");
+      }
+      document.writeln("<h2>Power of 2" + " from 1 to " + number + " </h2>");
+      document.writeln('<table border = "1">');
+      document.writeln(
+        '<thead><th align = "center" width = "50">2' +
+          "n".sup() +
+          '</th><th width = "200" align = "center">Value</th></thead>'
+      );
+      for (var i = 1; i <= number; i++) {
+        document.writeln(
+          '<tr><td align = "center">' +
+            2 +
+            i.toString().sup() +
+            '</td><td align = "center">' +
+            Math.pow(2, i) +
+            "</td></tr>"
+        );
+      }
+      document.writeln("</table>");
+    </script>
+  </head>
+  <body>
+    <a href="index.html" target="_top"><input type="button" value="Back" /></a>
+  </body>
+</html>

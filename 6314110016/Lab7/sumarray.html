@@ -1,0 +1,33 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Fig. 11.5: SumArray.html -->
+<!-- Summing Elements of an Array -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Irin Andris 6314110016</title>
+
+    <script type="text/javascript">
+
+        function start() {
+            var theArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            var total1 = 0, total2 = 0;
+
+            for (var i = 0; i < theArray.length; i++)
+                total1 += theArray[i];
+
+            document.writeln("Total using subscripts: " + total1);
+
+            for (var element in theArray)
+                total2 += theArray[element];
+
+            document.writeln("<br />Total using for...in: " +
+                total2);
+        }
+ // -->
+    </script>
+
+</head>
+<body><p><a href="//C:/6314110016/Lab7/index7.html">Back</a></p></body>
+<body onload="start()"></body>
+</htm

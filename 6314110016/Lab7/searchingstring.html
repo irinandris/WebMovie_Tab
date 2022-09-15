@@ -1,0 +1,55 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Fig. 12.5: SearchingStrings.html -->
+<!-- Searching Strings -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Irin Andris 6314110016
+    </title>
+
+    <script type="text/javascript">
+
+        var letters = "abcdefghijklmnopqrstuvwxyzabcdefghijklm";
+
+        function buttonPressed() {
+            searchForm.first.value =
+                letters.indexOf(searchForm.inputVal.value);
+            searchForm.last.value =
+                letters.lastIndexOf(searchForm.inputVal.value);
+            searchForm.first12.value =
+                letters.indexOf(searchForm.inputVal.value, 12);
+
+
+            searchForm.last12.value =
+                letters.lastIndexOf(
+                    searchForm.inputVal.value, 12);
+        }
+ // -->
+    </script>
+
+</head>
+
+<body>
+    <form name="searchForm" action="">
+        <h1>The string to search is: <br />
+            abcdefghijklmnopqrstuvwxyzabcdefghijklm </h1>
+        <p>Enter substring to search for
+            <input name="inputVal" type="text" />
+            <input name="search" type="button" value="Search" onclick="buttonPressed()" /><br />
+        </p>
+
+        <p>First occurrence located at index
+            <input name="first" type="text" size="5" />
+            <br />Last occurrence located at index
+            <input name="last" type="text" size="5" />
+            <br />First occurrence from index 12 located at index
+            <input name="first12" type="text" size="5" />
+            <br />Last occurrence from index 12 located at index
+            <input name="last12" type="text" size="5" />
+        </p>
+    </form>
+    <body><p><a href="//C:/6314110016/Lab7/index7.html">Back</a></p></body>
+</body>
+</htm

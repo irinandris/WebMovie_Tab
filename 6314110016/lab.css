@@ -1,0 +1,84 @@
+h1 {color: rgb(0, 0, 0);}
+
+p { color:rgb(85, 30, 30);
+font-size: 1em;
+/* border-style: solid; */
+margin-bottom: .0.5em;
+border-color: rgb(0, 0, 0);}
+
+body { background-color: rgb(194, 186, 186); }
+
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 1em;
+}
+/* เลื่่อนข้างล่าง */
+/* <style> */
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a.active {
+    background-color: #681111;
+    color: rgb(252, 244, 244);
+    border: 1px solid #5f0808;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+div.center {text-align: center;}
+/* </style> */
+/* ข้อความ */
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+}
+/* ประวัติ */
+.button {
+    background-color: #741010; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {width: 250px;}
+.button2 {width: 50%;}
+.button3 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+/* ตรงกลาง */
+.center {
+    margin: auto;
+    width: 60%;
+    /* border: 3px solid #fbfcf9; */
+    /* padding: 10px; */
+  }

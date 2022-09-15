@@ -1,0 +1,17 @@
+/* Fig. 6.4: styles.css */
+/* An external stylesheet */
+/* a:hover { text-decoration: underline;
+color: red;
+background-color: blue}
+
+li em { color: red;
+font-weight: bold
+; */
+
+body {background-color : blue}
+
+p {font-size: 10pt;
+    color: yellow }
+
+h1 { font-size: 20pt;
+    color: yellow; }

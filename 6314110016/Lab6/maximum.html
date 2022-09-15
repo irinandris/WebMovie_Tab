@@ -1,0 +1,43 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Fig. 10.3: maximum.html -->
+<!-- Maximum function -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Irin Andris 6314110016</title>
+
+    <script type="text/javascript">
+
+        var input1 =
+            window.prompt("Enter first number", "0");
+        var input2 =
+            window.prompt("Enter second number", "0");
+        var input3 =
+            window.prompt("Enter third number", "0");
+
+        var value1 = parseFloat(input1);
+        var value2 = parseFloat(input2);
+        var value3 = parseFloat(input3);
+
+        var maxValue = maximum(value1, value2, value3);
+
+        document.writeln("First number: " + value1 +
+            "<br />Second number: " + value2 +
+            "<br />Third number: " + value3 +
+            "<br />Maximum is: " + maxValue);
+
+        // maximum method definition (called from line 25)
+        function maximum(x, y, z) {
+            return Math.max(x, Math.max(y, z));
+        }
+ // -->
+    </script>
+
+</head>
+
+<body>
+    <p>Click Refresh (or Reload) to run the script again</p>
+    <body><p><a href="//C:/6314110016/Lab6/index6.html">Back</a></p></body>
+</body>
+</htm

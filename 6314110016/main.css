@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(167, 165, 165);
+  }
+  .center {
+    margin: auto;
+    width: 60%;
+    /* border: 3px solid #fbfcf9; */
+    /* padding: 10px; */
+  }
